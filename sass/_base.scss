@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 81.25%; // 13px
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 62.5%; //10px
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 81.25%; //10px
+  }
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  background-color: $light-grayish-blue;
+  padding: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, min-content);
+  gap: 2rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: block;
+  }
+}
