@@ -24,6 +24,10 @@ body {
   line-height: 1.4;
   background-color: $light-grayish-blue;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  min-height: 100vh;
 }
 
 .container {
